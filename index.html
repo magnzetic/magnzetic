@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reo's profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/564x/80/46/9e/80469e412709af4f7261feb19634f2ad.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .name, .bio {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .description {
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .additional-info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .additional-info .info-block {
+            margin-bottom: 20px;
+        }
+
+        .additional-info h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .additional-info p {
+            font-family: "Tahoma", sans-serif;
+            margin: 0;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .aesthetic-text {
+            font-family: "Copperplate", sans-serif;
+            font-size: 18px;
+            color: #333;
+            margin-left: 5px;
+        }
+
+        .nav-link {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .work-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .work-list li {
+            margin-bottom: 10px;
+        }
+
+        .work-category {
+            margin-top: 20px;
+        }
+
+        .work-category h2 {
+            font-family: 'Copperplate', serif;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .work-category a {
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .work-category a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .additional-info {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .additional-info .info-block {
+                width: calc(50% - 10px);
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="profile-page" class="container">
+    <div class="profile">
+        <img src="https://i.pinimg.com/564x/91/3a/62/913a623fb8f6b4a9e2c01b516dbe6504.jpg" alt="Profile Picture" class="profile-picture">
+        <h1 class="name">reo<span class="aesthetic-text">(any pronouns)</span></h1>
+        <p class="bio">21+</p>
+        <p class="description">experimental writer.</p>
+        <div class="additional-info">
+            <div class="info-block">
+                <h2>before you follow:</h2>
+                <p>my tweets and writings ALWAYS contain harsh/vulgar words in them. almost every fanfic i write is OOC. i repost and like nsfw fanfic/fanart a lot</p>
+            </div>
+            <div class="info-block">
+                <h2>do not interact if:</h2>
+                <p>you're a minor, homophobic, fandom police, or basically hating me for no reason bruh</p>
+            </div>
+        </div>
+        <ul class="contact-info">
+            <li>tellonym: <a href="https://tellonym.me/sacgwoo">confess here</a></li>
+            <li><a class="nav-link" onclick="showWorksPage()">MY WORKS</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="works-page" class="container hidden">
+    <h1>reo's works</h1>
+    
+    <div class="work-category">
+        <h2>Narration</h2>
+        <ul class="work-list">
+            <li><a href="https://x.com/magnzetic/status/1787102596026810690">Skripsi (Shiu Kong x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1789269772439613949">Konten (Toji Fushiguro x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1789647942527381874">Domain Expansion (Satoru Gojo x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1792170965876765048">Binding Vow (Ryomen Sukuna x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1796525203641729177">God (Choi Mujin x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1798683773619634364">God (Kento Nanami x f!reader)</a></li>
+        </ul>
+    </div>
+    
+    <div class="work-category">
+        <h2>Socmed Fiction</h2>
+        <ul class="work-list">
+            <li><a href="https://x.com/magnzetic/status/1790241209371459766">Maskeran (Choso Kamo x f!reader)</a></li>
+            <li><a href="https://x.com/magnzetic/status/1793252957473104377">Random chats (Shiu Kong x f!reader)</a></li>
+        </ul>
+    </div>
+    
+    <div class="work-category">
+        <h2>Others</h2>
+        <ul class="work-list">
+    </div>
+    
+    <p style="text-align: center;"><a class="nav-link" onclick="showProfilePage()">Back to Profile</a></p>
+</div>
+
+<script>
+    function showWorksPage() {
+        document.getElementById('profile-page').classList.add('hidden');
+        document.getElementById('works-page').classList.remove('hidden');
+    }
+
+    function showProfilePage() {
+        document.getElementById('profile-page').classList.remove('hidden');
+        document.getElementById('works-page').classList.add('hidden');
+    }
+</script>
+
+</body>
+</html>
